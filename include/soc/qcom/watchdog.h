@@ -30,7 +30,7 @@ static inline void msm_trigger_wdog_bite(void) { }
 #ifdef CONFIG_MSM_DLOAD_MODE
 int get_dload_mode(void);
 #else
-static inline int msm_trigger_wdog_bite(void) { return 0; }
+static inline int get_dload_mode(void) { return 0; }
 #endif
 
 #endif
